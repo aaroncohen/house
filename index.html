@@ -1,289 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Fairmede-Hilltop Home for Sale">
-<meta property="og:description" content="3-bedroom, 2-bathroom, 1,165 square foot single-family home, 5,900-square-foot lot">
-<meta property="og:image" content="https://house.yaelandaaron.com/img/thumbnail.jpg">
-<meta property="og:image:width" content="320">
-<meta property="og:image:height" content="240">
-<meta property="og:url" content="https://house.yaelandaaron.com">
-<title>Fairmede-Hilltop Home for Sale</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 2%;
-    /*padding: 2%;*/
-  }
-  header {
-    width:100%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 3em;
-    text-align: center;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Fairmede-Hilltop Home for Sale">
+    <meta property="og:description"
+          content="3-bedroom, 2-bathroom, 1,165 square foot single-family home, 5,900-square-foot lot">
+    <meta property="og:image" content="https://house.yaelandaaron.com/img/thumbnail.jpg">
+    <meta property="og:image:width" content="320">
+    <meta property="og:image:height" content="240">
+    <meta property="og:url" content="https://house.yaelandaaron.com">
+    <title>Fairmede-Hilltop Home for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2%;
+            /*padding: 2%;*/
+        }
 
-body {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
+        header {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 3em;
+            text-align: center;
+        }
 
-* {box-sizing:border-box}
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
+        * {
+            box-sizing: border-box
+        }
 
-/* Hide the images by default */
-.slide {
-  max-width: 800px;
-  width: 100%;
-  display: none;
-}
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            margin: auto;
+        }
 
-.slide img {
-  max-width: 800px;
-  width: 100%;
-}
+        /* Hide the images by default */
+        .slide {
+            max-width: 800px;
+            width: 100%;
+            display: none;
+        }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0,0,0,0.3);
-}
+        .slide img {
+            max-width: 800px;
+            width: 100%;
+        }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
 
-/* Fading animation */
-/*.fade {*/
-/*  animation-name: fade;*/
-/*  animation-duration: 1.5s;*/
-/*}*/
+        .active, .dot:hover {
+            background-color: #717171;
+        }
 
-/*@keyframes fade {*/
-/*  from {opacity: 1}*/
-/*  to {opacity: 1}*/
-/*}*/
+        /* Fading animation */
+        /*.fade {*/
+        /*  animation-name: fade;*/
+        /*  animation-duration: 1.5s;*/
+        /*}*/
 
-#description {
-  max-width: 800px;
-}
+        /*@keyframes fade {*/
+        /*  from {opacity: 1}*/
+        /*  to {opacity: 1}*/
+        /*}*/
 
-</style>
+        #description {
+            max-width: 800px;
+        }
+
+    </style>
 </head>
 <body>
 <header>
-  <h1>Fairmede-Hilltop Home for Sale</h1>
-  <h2>Privately listed until May 31, 2024</h2>
+    <h1>Fairmede-Hilltop Home for Sale</h1>
+    <h2>Privately listed until May 31, 2024</h2>
 </header>
 
-    <div class="slideshow-container">
+<div class="slideshow-container">
 
-      <div class="slide fade">
+    <div class="slide fade">
         <img src="img/front.jpg"/>
-      </div>
-
-      <div class="slide fade">
-        <img src="img/01.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/02.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/03.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/04.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/05.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/06.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/08.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/09.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/10.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/11.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/12.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/13.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/14.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/15.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/16.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/17.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/18.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/19.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/20.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/21.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/22.jpg"/>
-      </div>
-      <div class="slide fade">
-        <img src="img/floor.jpg"/>
-      </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
+    <div class="slide fade">
+        <img src="img/01.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/02.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/03.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/04.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/05.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/06.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/08.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/09.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/10.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/11.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/12.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/13.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/14.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/15.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/16.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/17.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/18.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/19.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/20.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/21.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/22.jpg"/>
+    </div>
+    <div class="slide fade">
+        <img src="img/floor.jpg"/>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
 <section id="description">
-  <h2><a href="https://maps.app.goo.gl/V5oJ4WEqwAtpavbw8" target="_blank">3135 Groom Dr, Richmond, CA</a> - Transparent price $720k</h2>
-  <h3>3-bedroom, 2-bathroom, 1,165 square foot single-family home, 5,900-square-foot lot</h3>
-  <h3>Fairmede-Hilltop neighborhood of Richmond, CA</h3>
-  <h4>Impeccably maintained and modern property renovated with permits from floor to ceiling with updated electrical throughout including 220v 50amp outlet for EV charging, a modern custom kitchen, two full bath remodels, Mitsubishi heatpump and mini-split cassettes in the living room and all three bedrooms, low-VOC interior paint, trim, engineered bamboo floors and wool carpets, extensive front and back landscaping and off-street parking for up to three cars.</h4>
-  <h4>If interested, contact our Realtor Susan Romero at <a href="mailto:susan.romero@cbnorcal.com">susan.romero@cbnorcal.com</a></h4>
-<p>This Fairmede-Hilltop home in Richmond has been meticulously renovated from floor to ceiling with the seller's discerning eye for detail, comfort, and environmental sustainability.</p>
+    <h2><a href="https://maps.app.goo.gl/V5oJ4WEqwAtpavbw8" target="_blank">3135 Groom Dr, Richmond, CA</a> -
+        Transparent price $720k</h2>
+    <h3>3-bedroom, 2-bathroom, 1,165 square foot single-family home, 5,900-square-foot lot</h3>
+    <h3>Fairmede-Hilltop neighborhood of Richmond, CA</h3>
+    <h4>Impeccably maintained and modern property renovated with permits from floor to ceiling with updated electrical
+        throughout including 220v 50amp outlet for EV charging, a modern custom kitchen, two full bath remodels,
+        Mitsubishi heatpump and mini-split cassettes in the living room and all three bedrooms, low-VOC interior paint,
+        trim, engineered bamboo floors and wool carpets, extensive front and back landscaping and off-street parking for
+        up to three cars.</h4>
+    <h4>If interested, contact our Realtor Susan Romero at <a href="mailto:susan.romero@cbnorcal.com">susan.romero@cbnorcal.com</a>
+    </h4>
+    <p>This Fairmede-Hilltop home in Richmond has been meticulously renovated from floor to ceiling with the seller's
+        discerning eye for detail, comfort, and environmental sustainability.</p>
 
-<p>We can accommodate showing access with some notice.
+    <p>We can accommodate showing access with some notice.
 
-<p>This turnkey property’s modern kitchen is bright, spacious and functional with a convenient appliance garage, sleek cabinets, enormous soft-close drawers, extra-thick Caesarstone quartz countertops, an extra-large 33-inch stainless steel Kraus sink and custom Heath tile backsplash, Kitchenaid dual oven gas range and refrigerator, and a Bosch 800 three-rack CrystalDry dishwasher.</p>
+    <p>This turnkey property’s modern kitchen is bright, spacious and functional with a convenient appliance garage,
+        sleek cabinets, enormous soft-close drawers, extra-thick Caesarstone quartz countertops, an extra-large 33-inch
+        stainless steel Kraus sink and custom Heath tile backsplash, Kitchenaid dual oven gas range and refrigerator,
+        and a Bosch 800 three-rack CrystalDry dishwasher.</p>
 
-<p>Both full bathrooms have been updated with refinished bathtubs, shower surrounds, Kohler toilets, fixtures, vent fans and vanities.</p>
+    <p>Both full bathrooms have been updated with refinished bathtubs, shower surrounds, Kohler toilets, fixtures, vent
+        fans and vanities.</p>
 
-<p>Additional updates include low-VOC interior paint and trim, low-VOC engineered bamboo floors and wool carpets with moisture barrier, low-VOC underlayment and all-natural cork padding.
+    <p>Additional updates include low-VOC interior paint and trim, low-VOC engineered bamboo floors and wool carpets
+        with moisture barrier, low-VOC underlayment and all-natural cork padding.
 
-<p>Efficient Mitsubishi heatpump and mini-split cassettes are in the living room and all three bedrooms, providing heating and cooling, and enhanced by the installation of dual-pane vinyl windows, replaced exterior sheathing and housewrap, exterior wall insulation and exterior LP Smartside and Hardie board siding.</p>
+    <p>Efficient Mitsubishi heatpump and mini-split cassettes are in the living room and all three bedrooms, providing
+        heating and cooling, and enhanced by the installation of dual-pane vinyl windows, replaced exterior sheathing
+        and housewrap, exterior wall insulation and exterior LP Smartside and Hardie board siding.</p>
 
-<p>Fully updated electrical system including mast and drop, main and sub panels, wiring throughout, installation of additional outlets and smart-switches, mid-century-inspired overhead and wall lighting, and a 220v 50amp outlet for electric car charging in the attached garage.</p>
+    <p>Fully updated electrical system including mast and drop, main and sub panels, wiring throughout, installation of
+        additional outlets and smart-switches, mid-century-inspired overhead and wall lighting, and a 220v 50amp outlet
+        for electric car charging in the attached garage.</p>
 
-<p>Previous owners replaced the flat roof with a pitched roof, creating an accessible attic perfect for deep storage.
+    <p>Previous owners replaced the flat roof with a pitched roof, creating an accessible attic perfect for deep
+        storage.
 
-<p>The attention to detail can also be found in the front garden landscaping that features drought-resistant native plants and a drip irrigation system. The fully fenced backyard features two raised garden beds with mature raspberry bushes and a raised bed faucet, lawn sprinklers, a beautifully paved patio area and a decomposed granite side yard. Mature privacy hedging screens the back of the house, and multiple rose bushes bloom through much of the year.
+    <p>The attention to detail can also be found in the front garden landscaping that features drought-resistant native
+        plants and a drip irrigation system. The fully fenced backyard features two raised garden beds with mature
+        raspberry bushes and a raised bed faucet, lawn sprinklers, a beautifully paved patio area and a decomposed
+        granite side yard. Mature privacy hedging screens the back of the house, and multiple rose bushes bloom through
+        much of the year.
 
-<p>Off-street parking for three cars, one in the garage and two in the driveway, with potentially more room along the side of the house.
+    <p>Off-street parking for three cars, one in the garage and two in the driveway, with potentially more room along
+        the side of the house.
 
-<p>Fairmede-Hilltop commuters enjoy convenient access to buses, a short drive to the El Cerrito del Norte BART station, as well as convenient access to Hwy 4 and I-80. The San Francisco-Richmond ferry is 20 minutes away.
+    <p>Fairmede-Hilltop commuters enjoy convenient access to buses, a short drive to the El Cerrito del Norte BART
+        station, as well as convenient access to Hwy 4 and I-80. The San Francisco-Richmond ferry is 20 minutes away.
 
-<p>We designed and remodeled this property with the intention to stay for many years and have decided to leave the Bay Area due to a new opportunity to be near family. We would love to complete the home sale by getting into contract off-market with a May 31st closing date, and if these stars don’t align, the property will come to market the first week of June.
+    <p>We designed and remodeled this property with the intention to stay for many years and have decided to leave the
+        Bay Area due to a new opportunity to be near family. We would love to complete the home sale by getting into
+        contract off-market with a May 31st closing date, and if these stars don’t align, the property will come to
+        market the first week of June.
 
-<p>Disclosures will be completed soon and will include a home, pest and roof inspection, a permit history related to the work we have done along with available receipts. The property is sewer lateral compliant.</p>
+    <p>Disclosures will be completed soon and will include a home, pest and roof inspection, a permit history related to
+        the work we have done along with available receipts. The property is sewer lateral compliant.</p>
 </section>
 
 <script>
-"use strict";
-let slideIndex = 1;
-document.addEventListener('DOMContentLoaded', function () {
-  showSlides(slideIndex);
-}, false);
+    "use strict";
+    let slideIndex = 1;
+    document.addEventListener('DOMContentLoaded', function () {
+        showSlides(slideIndex);
+    }, false);
 
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  // let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  // dots[slideIndex-1].className += " active";
-}
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        // let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        // for (i = 0; i < dots.length; i++) {
+        //   dots[i].className = dots[i].className.replace(" active", "");
+        // }
+        // dots[slideIndex-1].className += " active";
+    }
 
 </script>
 </body>
